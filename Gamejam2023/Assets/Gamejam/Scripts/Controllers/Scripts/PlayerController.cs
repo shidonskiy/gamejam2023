@@ -34,6 +34,8 @@ public class PlayerController : MonoBehaviour {
 	LayerMask probeMask = -1, stairsMask = -1;
 
 	[SerializeField] private StarterAssetsInputs input;
+	
+	[SerializeField] private Transform playerObject;
 
 	Rigidbody body, connectedBody, previousConnectedBody;
 
@@ -86,12 +88,11 @@ public class PlayerController : MonoBehaviour {
 
 	void FixedUpdate () {
 		Vector3 gravity = CustomGravity.GetGravity(body.position, out upAxis);
+		
+		var fromToUp = Quaternion.FromToRotation(playerObject.right, Vector3.Cross(upAxis, playerObject.forward));
+		var rotation = Quaternion.LookRotation(playerObject.forward, upAxis);
+		playerObject.rotation = Quaternion.RotateTowards(playerObject.rotation, rotation, rotationSpeed * Time.deltaTime);
 
-		var rotation = Quaternion.LookRotation(body.transform.forward, upAxis);
-		//body.rotation = Quaternion.RotateTowards(body.rotation, rotation, rotationSpeed);
-		
-		Debug.Log($"Gravity: {gravity}");
-		
 		Debug.DrawLine(transform.position, transform.position + gravity, Color.red);
 		
 		UpdateState();
