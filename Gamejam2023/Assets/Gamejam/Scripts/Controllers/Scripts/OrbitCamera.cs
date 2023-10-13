@@ -14,6 +14,8 @@ public class OrbitCamera : MonoBehaviour {
 
 	Quaternion orbitRotation;
 	
+	public Vector2 OrientationAngles => orbitAngles;
+
 	[Header("Cinemachine")]
 	[Tooltip("The follow target set in the Cinemachine Virtual Camera that the camera will follow")]
 	public GameObject CinemachineCameraTarget;
