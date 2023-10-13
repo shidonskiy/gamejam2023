@@ -50,7 +50,7 @@ namespace Gamejam.Scripts.Controllers.Scripts.Environment
                 var angle = Quaternion.Euler(Vector3.Cross(transform.forward, rotationAxis) * (rotationSpeed * Time.deltaTime));
 
                 Quaternion rotation = Quaternion.AngleAxis(rotationSpeed * Time.deltaTime, rotationAxis);
-                transform.localRotation *= angle;
+                transform.localRotation *= rotation;
             }
         }
 
