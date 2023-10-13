@@ -1190,6 +1190,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 19a90a7914bdba94ba6755de2f5ccf0f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ef5b74d89cda1374da52701441e97ce7, type: 2}
     - target: {fileID: 919132149155446097, guid: 19a90a7914bdba94ba6755de2f5ccf0f, type: 3}
       propertyPath: m_Name
       value: Stairs_to_hell_00
@@ -1271,6 +1275,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ae26b37323eb67747aeedae7ce0487a4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 466904440481e7048b2de43d48da6973, type: 2}
+    - target: {fileID: -7511558181221131132, guid: ae26b37323eb67747aeedae7ce0487a4, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 865b1bbff8d551844a26d15e39fed7cf, type: 2}
     - target: {fileID: 919132149155446097, guid: ae26b37323eb67747aeedae7ce0487a4, type: 3}
       propertyPath: m_Name
       value: Basemant
@@ -1352,6 +1364,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c1111581634e21b45a522361750c5b84, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b8660f8dbe2d3084db5d932dbc315531, type: 2}
+    - target: {fileID: -7511558181221131132, guid: c1111581634e21b45a522361750c5b84, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: b8660f8dbe2d3084db5d932dbc315531, type: 2}
     - target: {fileID: 919132149155446097, guid: c1111581634e21b45a522361750c5b84, type: 3}
       propertyPath: m_Name
       value: Hell
@@ -1433,6 +1453,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 51443badeefd1624291c0d5755bca2e6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 86f2a83c252971447aabec393308df3b, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 51443badeefd1624291c0d5755bca2e6, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1864afa795fe30a4e9221546d84e46bf, type: 2}
     - target: {fileID: 919132149155446097, guid: 51443badeefd1624291c0d5755bca2e6, type: 3}
       propertyPath: m_Name
       value: Room_1
@@ -1518,6 +1546,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 169a67484a63ec842a608b8d38638440, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ef5b74d89cda1374da52701441e97ce7, type: 2}
     - target: {fileID: 919132149155446097, guid: 169a67484a63ec842a608b8d38638440, type: 3}
       propertyPath: m_Name
       value: Stairs_to_hell_02
@@ -1548,6 +1580,83 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6279114912710551571, guid: 169a67484a63ec842a608b8d38638440, type: 3}
+--- !u!1001 &42396473513408441
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 512326390018843411}
+    m_Modifications:
+    - target: {fileID: 4817114302763381561, guid: 3780e59a826444d2bbc8a483dd0f2c88, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4817114302763381561, guid: 3780e59a826444d2bbc8a483dd0f2c88, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.78504
+      objectReference: {fileID: 0}
+    - target: {fileID: 4817114302763381561, guid: 3780e59a826444d2bbc8a483dd0f2c88, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.97621113
+      objectReference: {fileID: 0}
+    - target: {fileID: 4817114302763381561, guid: 3780e59a826444d2bbc8a483dd0f2c88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -48.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 4817114302763381561, guid: 3780e59a826444d2bbc8a483dd0f2c88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 4817114302763381561, guid: 3780e59a826444d2bbc8a483dd0f2c88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 4817114302763381561, guid: 3780e59a826444d2bbc8a483dd0f2c88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6444486
+      objectReference: {fileID: 0}
+    - target: {fileID: 4817114302763381561, guid: 3780e59a826444d2bbc8a483dd0f2c88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.6444486
+      objectReference: {fileID: 0}
+    - target: {fileID: 4817114302763381561, guid: 3780e59a826444d2bbc8a483dd0f2c88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.29100865
+      objectReference: {fileID: 0}
+    - target: {fileID: 4817114302763381561, guid: 3780e59a826444d2bbc8a483dd0f2c88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.29100865
+      objectReference: {fileID: 0}
+    - target: {fileID: 4817114302763381561, guid: 3780e59a826444d2bbc8a483dd0f2c88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4817114302763381561, guid: 3780e59a826444d2bbc8a483dd0f2c88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4817114302763381561, guid: 3780e59a826444d2bbc8a483dd0f2c88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4817114302763381562, guid: 3780e59a826444d2bbc8a483dd0f2c88, type: 3}
+      propertyPath: OnToggle.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4817114302763381562, guid: 3780e59a826444d2bbc8a483dd0f2c88, type: 3}
+      propertyPath: OnToggle.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnToggle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4817114302763381562, guid: 3780e59a826444d2bbc8a483dd0f2c88, type: 3}
+      propertyPath: OnToggle.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Gamejam.Scripts.Controllers.Scripts.Environment.RotationActor, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4817114302763381565, guid: 3780e59a826444d2bbc8a483dd0f2c88, type: 3}
+      propertyPath: m_Name
+      value: Trigger
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3780e59a826444d2bbc8a483dd0f2c88, type: 3}
 --- !u!1001 &42396473721132364
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1599,6 +1708,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 3e0438f74d2669b4690bd4ac422de102, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ec789963916a7304ea1409621916c7bf, type: 2}
     - target: {fileID: 919132149155446097, guid: 3e0438f74d2669b4690bd4ac422de102, type: 3}
       propertyPath: m_Name
       value: Cylinder
@@ -1684,6 +1797,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 47538047b30d36d429294a599feac5cb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ef5b74d89cda1374da52701441e97ce7, type: 2}
     - target: {fileID: 919132149155446097, guid: 47538047b30d36d429294a599feac5cb, type: 3}
       propertyPath: m_Name
       value: Stairs_to_hell_01
@@ -1769,6 +1886,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 49d3d32d2dc0d5244a0f740aaeabe0c3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ef5b74d89cda1374da52701441e97ce7, type: 2}
     - target: {fileID: 919132149155446097, guid: 49d3d32d2dc0d5244a0f740aaeabe0c3, type: 3}
       propertyPath: m_Name
       value: Stairs_to_hell_04
@@ -1850,6 +1971,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 180bf778e275cfc439ba8cbf0b12944d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9713b0e5d429eb540837145394ce196f, type: 2}
     - target: {fileID: 919132149155446097, guid: 180bf778e275cfc439ba8cbf0b12944d, type: 3}
       propertyPath: m_Name
       value: Stairs
@@ -1861,25 +1986,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 180bf778e275cfc439ba8cbf0b12944d, type: 3}
   m_PrefabInstance: {fileID: 42396474154422397}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &889450548585639212 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 180bf778e275cfc439ba8cbf0b12944d, type: 3}
-  m_PrefabInstance: {fileID: 42396474154422397}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &724686100
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 889450548585639212}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4104380202958562290, guid: 180bf778e275cfc439ba8cbf0b12944d, type: 3}
 --- !u!1001 &42396474193863568
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1931,6 +2037,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: fd7df6c11c80b604cb8fd101db928d02, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2291599fa6706ac4da0a13d81e8d95cc, type: 2}
+    - target: {fileID: -7511558181221131132, guid: fd7df6c11c80b604cb8fd101db928d02, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: abf104ac211b280419317e3c1542d364, type: 2}
+    - target: {fileID: -7511558181221131132, guid: fd7df6c11c80b604cb8fd101db928d02, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 93f711356b9d74045aa70bff5d03f753, type: 2}
     - target: {fileID: 919132149155446097, guid: fd7df6c11c80b604cb8fd101db928d02, type: 3}
       propertyPath: m_Name
       value: Cube_Fish
@@ -2013,6 +2131,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: ee5c2e0994dbbb94a89f8736ef54df96, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9713b0e5d429eb540837145394ce196f, type: 2}
+    - target: {fileID: -7511558181221131132, guid: ee5c2e0994dbbb94a89f8736ef54df96, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 9713b0e5d429eb540837145394ce196f, type: 2}
@@ -2033,20 +2155,6 @@ GameObject:
   m_PrefabInstance: {fileID: 42396474242088933}
   m_PrefabAsset: {fileID: 0}
 --- !u!64 &42396473036267553
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 889450547732578996}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -7582146781854002508, guid: ee5c2e0994dbbb94a89f8736ef54df96, type: 3}
---- !u!64 &42396473036267554
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2111,6 +2219,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 6fff281215dfbff4d8e446e8135e3637, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 865b1bbff8d551844a26d15e39fed7cf, type: 2}
     - target: {fileID: 919132149155446097, guid: 6fff281215dfbff4d8e446e8135e3637, type: 3}
       propertyPath: m_Name
       value: Stairs_to_hell_pipes
@@ -2192,6 +2304,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 85fbcbd4f322a614fa5452f5a06afa9e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1b1f63db76208d248859a507438bde75, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 85fbcbd4f322a614fa5452f5a06afa9e, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: db02744a0b7cbfd43a50abb597f096f1, type: 2}
     - target: {fileID: 919132149155446097, guid: 85fbcbd4f322a614fa5452f5a06afa9e, type: 3}
       propertyPath: m_Name
       value: Final
@@ -2277,6 +2397,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 16b029a519f4a7741b59733b0199c8a6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ef5b74d89cda1374da52701441e97ce7, type: 2}
     - target: {fileID: 919132149155446097, guid: 16b029a519f4a7741b59733b0199c8a6, type: 3}
       propertyPath: m_Name
       value: Stairs_to_hell_03
@@ -4577,8 +4701,8 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d228e76133f04b14f8e3a2733d8e8f1b, type: 3}
   m_PrefabInstance: {fileID: 2047642089037886572}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &8229323555355952723
-BoxCollider:
+--- !u!64 &42396473036267540
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4587,9 +4711,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.541873, y: 2.337392, z: 3.5289195}
-  m_Center: {x: -3.1787457, y: -1.089418, z: -1.7753927}
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8059501899843086048, guid: d228e76133f04b14f8e3a2733d8e8f1b, type: 3}
 --- !u!4 &2008630571957261191 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d228e76133f04b14f8e3a2733d8e8f1b, type: 3}
