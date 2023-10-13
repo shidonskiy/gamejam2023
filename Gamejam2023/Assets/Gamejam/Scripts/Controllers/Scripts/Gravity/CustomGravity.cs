@@ -31,8 +31,13 @@ public static class CustomGravity {
 
 	public static Vector3 GetGravity (Vector3 position, out Vector3 upAxis) {
 		Vector3 g = Vector3.zero;
-		for (int i = 0; i < sources.Count; i++) {
-			g += sources[i].GetGravity(position);
+		for (int i = 0; i < sources.Count; i++)
+		{
+			var sourceGravity = sources[i].GetGravity(position);
+			if (g.sqrMagnitude < sourceGravity.sqrMagnitude)
+			{
+				g = sourceGravity;
+			}
 		}
 		upAxis = -g.normalized;
 		return g;
