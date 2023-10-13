@@ -2,12 +2,8 @@ namespace GameJam.Scripts.Utils
 {
     public static class Layers
     {
+        public const int Player = 5;
         public const int Ground = 6;
-        public const int Point = 7;
-        public const int Bouncer = 8;
-        public const int GoodSheep = 9;
-        public const int Spikes = 10;
-        public const int BadSheep = 11;
-        public const int Complete = 12;
+        public const int Collectable = 7;
     }
 }

@@ -26,7 +26,7 @@ namespace Gamejam.Scripts.Controllers.Scripts.Environment
             {
                 transform.localScale = GetScale(currentScale, targetScale);
             }
-            else
+            else if (backToDefault)
             {
                 transform.localScale = GetScale(currentScale, startScale);
             }
