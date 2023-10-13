@@ -23,20 +23,15 @@ namespace Gamejam.Scripts.Controllers.Scripts.Environment
 
         private void FixedUpdate()
         {
-            if (isRotationActive)
+            if (isRotationActive && !backToDefault)
             {
                 Rotate();
             }
             else if (backToDefault)
             {
                 target.localRotation =
-                    Quaternion.RotateTowards(transform.localRotation, startLocalRotation, rotationSpeed * Time.deltaTime);
+                    Quaternion.RotateTowards(target.localRotation, startLocalRotation, rotationSpeed * Time.deltaTime);
             }
-        }
-
-        public override void BackToDefault()
-        {
-            
         }
 
         private void Rotate()

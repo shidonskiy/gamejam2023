@@ -23,7 +23,7 @@ namespace Gamejam.Scripts.Controllers.Scripts.Environment
         private void FixedUpdate()
         {
             var currentScale = target.localScale;
-            if (isScaleActive)
+            if (isScaleActive && !backToDefault)
             {
                 target.localScale = GetScale(currentScale, targetScale);
             }

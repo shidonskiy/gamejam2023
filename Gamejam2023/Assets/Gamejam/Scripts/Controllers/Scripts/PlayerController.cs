@@ -1,5 +1,6 @@
 ﻿using StarterAssets;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
 
@@ -76,6 +77,11 @@ public class PlayerController : MonoBehaviour {
 		Vector2 playerInput;
 		playerInput =  input.move;
 		playerInput = Vector2.ClampMagnitude(playerInput, 1f);
+
+		if (input.restart)
+		{
+			SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
+		}
 
 		if (playerInputSpace) {
 			rightAxis = ProjectDirectionOnPlane(playerInputSpace.right, upAxis);
