@@ -91,7 +91,7 @@ public class PlayerController : MonoBehaviour {
 			rightAxis = ProjectDirectionOnPlane(Vector3.right, upAxis);
 			forwardAxis = ProjectDirectionOnPlane(Vector3.forward, upAxis);
 		}
-		desiredVelocity = new Vector3(playerInput.x, 0f, playerInput.y) * maxSpeed;
+		desiredVelocity = new Vector3(playerInput.x, 0f, playerInput.y) * (maxSpeed * transform.localScale.x);
 	}
 
 	void FixedUpdate () {
@@ -128,9 +128,7 @@ public class PlayerController : MonoBehaviour {
 		stepsSinceLastGrounded += 1;
 		stepsSinceLastJump += 1;
 		velocity = body.velocity;
-		
-		Debug.Log($"On ground: {OnGround}");
-		
+
 		if (OnGround || SnapToGround() || CheckSteepContacts()) {
 			stepsSinceLastGrounded = 0;
 			if (stepsSinceLastJump > 1) {
@@ -248,7 +246,8 @@ public class PlayerController : MonoBehaviour {
 
 		stepsSinceLastJump = 0;
 		jumpPhase += 1;
-		float jumpSpeed = Mathf.Sqrt(2f * gravity.magnitude * jumpHeight);
+		var height = jumpHeight * transform.localScale.y;
+		float jumpSpeed = Mathf.Sqrt(2f * gravity.magnitude * height);
 		jumpDirection = (jumpDirection + upAxis).normalized;
 		float alignedSpeed = Vector3.Dot(velocity, jumpDirection);
 		if (alignedSpeed > 0f) {

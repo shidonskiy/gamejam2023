@@ -16,7 +16,7 @@ namespace Gamejam.Scripts.Controllers.Scripts.Environment
 
         private void Awake()
         {
-            startScaleTime = Time.time;
+            startScaleTime = Time.realtimeSinceStartup;
             startScale = target.localScale;
         }
 
@@ -35,7 +35,7 @@ namespace Gamejam.Scripts.Controllers.Scripts.Environment
 
         private Vector3 GetScale(Vector3 currentScale, Vector3 targetScale)
         {
-            Vector3 scale = Vector3.Lerp(currentScale, targetScale, (Time.time - startScaleTime) / scaleTime);
+            Vector3 scale = Vector3.Lerp(currentScale, targetScale, (Time.realtimeSinceStartup - startScaleTime) / scaleTime);
             
             return scale;
         }
@@ -44,7 +44,7 @@ namespace Gamejam.Scripts.Controllers.Scripts.Environment
         {
             base.OnToggle(isActive);
 
-            startScaleTime = Time.time;
+            startScaleTime = Time.realtimeSinceStartup;
             isScaleActive = isActive;
         }
     }
