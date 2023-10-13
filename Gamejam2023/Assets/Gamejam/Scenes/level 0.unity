@@ -1124,7 +1124,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2979812079809791617, guid: dca4456c9c9a34036bfa66798d475ca7, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2979812079809791622, guid: dca4456c9c9a34036bfa66798d475ca7, type: 3}
       propertyPath: m_RootOrder
@@ -1196,7 +1196,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2979812079809791623, guid: dca4456c9c9a34036bfa66798d475ca7, type: 3}
       propertyPath: boundaryDistance.m_Center.y
-      value: 9.004787
+      value: 8.039652
       objectReference: {fileID: 0}
     - target: {fileID: 2979812079809791623, guid: dca4456c9c9a34036bfa66798d475ca7, type: 3}
       propertyPath: boundaryDistance.m_Center.z
@@ -1208,7 +1208,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2979812079809791623, guid: dca4456c9c9a34036bfa66798d475ca7, type: 3}
       propertyPath: boundaryDistance.m_Extent.y
-      value: 6.278488
+      value: 7.243624
       objectReference: {fileID: 0}
     - target: {fileID: 2979812079809791623, guid: dca4456c9c9a34036bfa66798d475ca7, type: 3}
       propertyPath: boundaryDistance.m_Extent.z

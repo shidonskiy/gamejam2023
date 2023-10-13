@@ -115,7 +115,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collectionText: {fileID: 6877486076794257725}
-  collector: {fileID: 0}
 --- !u!1 &6877486076794257723
 GameObject:
   m_ObjectHideFlags: 0
