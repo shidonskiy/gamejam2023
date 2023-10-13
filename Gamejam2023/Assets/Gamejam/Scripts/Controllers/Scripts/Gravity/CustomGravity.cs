@@ -49,7 +49,7 @@ public static class CustomGravity {
 	public static Vector3 GetGravity (Vector3 position) {
 		Vector3 g = Vector3.zero;
 		for (int i = 0; i < sources.Count; i++) {
-			g += sources[i].GetGravity(position);
+			g += sources[i].GetGravity(position, out var isActive);
 		}
 		return g;
 	}
@@ -57,14 +57,19 @@ public static class CustomGravity {
 	public static Vector3 GetGravity (Vector3 position, out Vector3 upAxis) {
 		Vector3 g = Vector3.zero;
 		int priority = 0;
-		for (int i = 0; i < sources.Count; i++)
+		for (int i = sources.Count - 1; i >= 0; i--)
 		{
-			var sourceGravity = sources[i].GetGravity(position);
+			var sourceGravity = sources[i].GetGravity(position, out var isActive);
+			if (!isActive)
+			{
+				continue;
+			}
 			
 			if (sourceGravity.sqrMagnitude > 0 && sources[i].Priority > priority)
 			{
 				priority = sources[i].Priority;
 				Forward = sources[i].transform.forward;
+				sources[i].Activate();
 				g = sourceGravity;
 			}
 			else if (sources[i].Priority == priority)
@@ -72,19 +77,12 @@ public static class CustomGravity {
 				if (g.sqrMagnitude < sourceGravity.sqrMagnitude)
 				{
 					Forward = sources[i].transform.forward;
+					sources[i].Activate();
 					g = sourceGravity;
 				}
 			}
 		}
 		upAxis = -g.normalized;
 		return g;
-	}
-
-	public static Vector3 GetUpAxis (Vector3 position) {
-		Vector3 g = Vector3.zero;
-		for (int i = 0; i < sources.Count; i++) {
-			g += sources[i].GetGravity(position);
-		}
-		return -g.normalized;
 	}
 }

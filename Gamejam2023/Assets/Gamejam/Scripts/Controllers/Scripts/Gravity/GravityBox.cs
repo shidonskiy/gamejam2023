@@ -16,9 +16,11 @@ public class GravityBox : GravitySource {
 
 	float innerFalloffFactor, outerFalloffFactor;
 
-	public override Vector3 GetGravity (Vector3 position) {
+	public override Vector3 GetGravity (Vector3 position, out bool isActive) {
 		position =
 			transform.InverseTransformDirection(position - transform.position);
+
+		isActive = true;
 
 		Vector3 vector = Vector3.zero;
 		int outside = 0;

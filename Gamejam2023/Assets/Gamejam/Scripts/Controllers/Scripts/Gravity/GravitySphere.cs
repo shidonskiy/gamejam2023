@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class GravitySphere : GravitySource {
 
@@ -14,7 +13,9 @@ public class GravitySphere : GravitySource {
 
 	float innerFalloffFactor, outerFalloffFactor;
 
-	public override Vector3 GetGravity (Vector3 position) {
+	public override Vector3 GetGravity (Vector3 position, out bool isActive)
+	{
+		isActive = true;
 		Vector3 vector = transform.position - position;
 		float distance = vector.magnitude;
 		if (distance > outerFalloffRadius || distance < innerFalloffRadius) {

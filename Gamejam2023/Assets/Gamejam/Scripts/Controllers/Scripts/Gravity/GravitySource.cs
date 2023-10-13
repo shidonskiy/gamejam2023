@@ -8,8 +8,28 @@ public class GravitySource : BaseInteractable
 
 	public int Priority => priority;
 	
-	public virtual Vector3 GetGravity (Vector3 position) {
+	public bool WasActive { get; protected set; }
+
+	protected bool shouldDisable;
+
+	public void DisableIfNeeded()
+	{
+		if (shouldDisable)
+		{
+			shouldDisable = false;
+			gameObject.SetActive(false);
+		}
+	}
+	
+	public virtual Vector3 GetGravity (Vector3 position, out bool isActive)
+	{
+		isActive = true;
 		return Physics.gravity;
+	}
+
+	public void Activate()
+	{
+		WasActive = true;
 	}
 
 	void OnEnable () {

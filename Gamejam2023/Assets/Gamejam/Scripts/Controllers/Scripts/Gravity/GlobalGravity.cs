@@ -7,7 +7,9 @@ namespace Gamejam.Scripts.Controllers.Scripts
     {
         [SerializeField] private float gravity;
 
-        public override Vector3 GetGravity (Vector3 position) {
+        public override Vector3 GetGravity (Vector3 position, out bool isActive)
+        {
+            isActive = true;
             return transform.up * gravity;
         }
     }

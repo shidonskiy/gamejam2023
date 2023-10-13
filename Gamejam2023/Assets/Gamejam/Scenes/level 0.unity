@@ -1178,12 +1178,20 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2979812079809791623, guid: dca4456c9c9a34036bfa66798d475ca7, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2979812079809791623, guid: dca4456c9c9a34036bfa66798d475ca7, type: 3}
+      propertyPath: disableOnLeave
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2979812079809791623, guid: dca4456c9c9a34036bfa66798d475ca7, type: 3}
       propertyPath: boundaryDistance.m_Center.x
       value: -10.079784
       objectReference: {fileID: 0}
     - target: {fileID: 2979812079809791623, guid: dca4456c9c9a34036bfa66798d475ca7, type: 3}
       propertyPath: boundaryDistance.m_Center.y
-      value: 8.600239
+      value: 7.841326
       objectReference: {fileID: 0}
     - target: {fileID: 2979812079809791623, guid: dca4456c9c9a34036bfa66798d475ca7, type: 3}
       propertyPath: boundaryDistance.m_Center.z
@@ -1195,7 +1203,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2979812079809791623, guid: dca4456c9c9a34036bfa66798d475ca7, type: 3}
       propertyPath: boundaryDistance.m_Extent.y
-      value: 6.6830373
+      value: 7.4419494
       objectReference: {fileID: 0}
     - target: {fileID: 2979812079809791623, guid: dca4456c9c9a34036bfa66798d475ca7, type: 3}
       propertyPath: boundaryDistance.m_Extent.z
@@ -4171,6 +4179,10 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2979812079809791623, guid: dca4456c9c9a34036bfa66798d475ca7, type: 3}
+      propertyPath: disableOnLeave
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2979812079809791623, guid: dca4456c9c9a34036bfa66798d475ca7, type: 3}
       propertyPath: boundaryDistance.m_Center.x
       value: -10.079784
       objectReference: {fileID: 0}
@@ -5960,14 +5972,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 6666895791623026057, guid: 0d6787f4811414db89a229b2f32ecf99, type: 3}
-      propertyPath: m_Constraints
-      value: 112
-      objectReference: {fileID: 0}
-    - target: {fileID: 7674784762249378601, guid: 0d6787f4811414db89a229b2f32ecf99, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 13400000, guid: cd3ed65f8a208485b837c6e7eea979de, type: 2}
     - target: {fileID: 8312374832750681864, guid: 0d6787f4811414db89a229b2f32ecf99, type: 3}
       propertyPath: m_RootOrder
       value: 0
