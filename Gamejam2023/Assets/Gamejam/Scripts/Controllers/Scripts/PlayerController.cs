@@ -89,7 +89,6 @@ public class PlayerController : MonoBehaviour {
 	void FixedUpdate () {
 		Vector3 gravity = CustomGravity.GetGravity(body.position, out upAxis);
 		
-		var fromToUp = Quaternion.FromToRotation(playerObject.right, Vector3.Cross(upAxis, playerObject.forward));
 		var rotation = Quaternion.LookRotation(playerObject.forward, upAxis);
 		playerObject.rotation = Quaternion.RotateTowards(playerObject.rotation, rotation, rotationSpeed * Time.deltaTime);
 
