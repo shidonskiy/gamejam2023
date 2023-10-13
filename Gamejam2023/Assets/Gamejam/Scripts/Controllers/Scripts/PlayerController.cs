@@ -37,6 +37,8 @@ public class PlayerController : MonoBehaviour {
 	
 	[SerializeField] private Transform playerObject;
 
+	[SerializeField] private OrbitCamera playerCamera;
+
 	Rigidbody body, connectedBody, previousConnectedBody;
 
 	Vector3 velocity, desiredVelocity, connectionVelocity;
