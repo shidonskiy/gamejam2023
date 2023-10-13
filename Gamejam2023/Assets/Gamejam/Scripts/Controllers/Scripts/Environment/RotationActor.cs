@@ -26,11 +26,16 @@ namespace Gamejam.Scripts.Controllers.Scripts.Environment
             {
                 Rotate();
             }
-            else
+            else if (backToDefault)
             {
                 transform.localRotation =
                     Quaternion.RotateTowards(transform.localRotation, startLocalRotation, rotationSpeed * Time.deltaTime);
             }
+        }
+
+        public override void BackToDefault()
+        {
+            
         }
 
         private void Rotate()
@@ -43,13 +48,13 @@ namespace Gamejam.Scripts.Controllers.Scripts.Environment
                 var rotation = Quaternion.LookRotation(rotateTo.forward, rotateTo.up);
 
                 transform.rotation =
-                    Quaternion.RotateTowards(transform.rotation, rotation, rotationSpeed * Time.deltaTime);
+                    Quaternion.RotateTowards(transform.rotation, rotation, rotationSpeed * Time.fixedDeltaTime);
             }
             else
             {
-                var angle = Quaternion.Euler(Vector3.Cross(transform.forward, rotationAxis) * (rotationSpeed * Time.deltaTime));
+                var angle = Quaternion.Euler(Vector3.Cross(transform.forward, rotationAxis) * (rotationSpeed * Time.fixedDeltaTime));
 
-                Quaternion rotation = Quaternion.AngleAxis(rotationSpeed * Time.deltaTime, rotationAxis);
+                Quaternion rotation = Quaternion.AngleAxis(rotationSpeed * Time.fixedDeltaTime, rotationAxis);
                 transform.localRotation *= rotation;
             }
         }
