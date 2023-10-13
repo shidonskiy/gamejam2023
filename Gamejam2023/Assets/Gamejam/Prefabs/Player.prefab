@@ -230,6 +230,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerCapsule
       objectReference: {fileID: 0}
+    - target: {fileID: 810705614311841461, guid: f3fd8206631c540b6b458cf00c98a14f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3894530294379727523, guid: f3fd8206631c540b6b458cf00c98a14f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5023254387062810606, guid: f3fd8206631c540b6b458cf00c98a14f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3fd8206631c540b6b458cf00c98a14f, type: 3}
 --- !u!4 &1817301401927751265 stripped
@@ -259,9 +271,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 938f8b98b0164698ac150bce706f4a08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 6666895791623026055}
   targetScale: {x: 0.5, y: 0.5, z: 0.5}
   scaleTime: 2
   isScaleActive: 0
+--- !u!114 &4303157396168543666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6327067965284740925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5b7b53b63604d45b936f90c1f90deb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &6666895791623026055 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3347847093715983, guid: f3fd8206631c540b6b458cf00c98a14f, type: 3}
