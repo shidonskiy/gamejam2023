@@ -1,5 +1,4 @@
 using System;
-using Gamejam.Scripts.Controllers.Scripts.Environment.Collectable;
 using TMPro;
 using UnityEngine;
 
@@ -8,22 +7,28 @@ namespace Gamejam.Scripts.Controllers.Scripts.UI
     public class GameplayView : MonoBehaviour
     {
         [SerializeField] private TextMeshProUGUI collectionText;
-        [SerializeField] private Collector collector;
+
+        private int maxCount;
 
         private void OnEnable()
         {
-            collector.CountChanged += CollectorOnCountChanged;
-            collectionText.text = $"COLLECTION: {collector.Count}";
+            Time.timeScale = 1;
         }
         
         private void OnDisable()
         {
-            collector.CountChanged -= CollectorOnCountChanged;
+            Time.timeScale = 0;
         }
-        
-        private void CollectorOnCountChanged(int count)
+
+        public void Setup(int max)
         {
-            collectionText.text = $"COLLECTION: {count}";
+            maxCount = max;
+            collectionText.text = $"COLLECTION: 0 : {maxCount}";
+        }
+
+        public void UpdateCount(int count)
+        {
+            collectionText.text = $"COLLECTION: {count} : {maxCount}";
         }
     }
 }

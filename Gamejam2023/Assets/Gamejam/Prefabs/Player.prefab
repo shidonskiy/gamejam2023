@@ -179,9 +179,17 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3347847093715982, guid: f3fd8206631c540b6b458cf00c98a14f, type: 3}
+      propertyPath: maxSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3347847093715982, guid: f3fd8206631c540b6b458cf00c98a14f, type: 3}
       propertyPath: playerCamera
       value: 
       objectReference: {fileID: 7032666638179574228}
+    - target: {fileID: 3347847093715982, guid: f3fd8206631c540b6b458cf00c98a14f, type: 3}
+      propertyPath: maxAcceleration
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 3347847093715983, guid: f3fd8206631c540b6b458cf00c98a14f, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -238,6 +246,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 4030276747414864585, guid: f3fd8206631c540b6b458cf00c98a14f, type: 3}
+      propertyPath: cursorLocked
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5023254387062810606, guid: f3fd8206631c540b6b458cf00c98a14f, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -287,6 +299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5b7b53b63604d45b936f90c1f90deb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxCount: 1
 --- !u!4 &6666895791623026055 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3347847093715983, guid: f3fd8206631c540b6b458cf00c98a14f, type: 3}
