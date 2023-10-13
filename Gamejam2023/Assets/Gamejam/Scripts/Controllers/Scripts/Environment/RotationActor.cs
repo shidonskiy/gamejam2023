@@ -5,6 +5,7 @@ namespace Gamejam.Scripts.Controllers.Scripts.Environment
 {
     public class RotationActor : BaseInteractable
     {
+        [SerializeField] private Transform target;
         [SerializeField] private Vector3 rotationAxis = Vector3.forward;
 
         [SerializeField] private float rotationSpeed;
@@ -17,7 +18,7 @@ namespace Gamejam.Scripts.Controllers.Scripts.Environment
 
         private void Awake()
         {
-            startLocalRotation = transform.localRotation;
+            startLocalRotation = target.localRotation;
         }
 
         private void FixedUpdate()
@@ -28,7 +29,7 @@ namespace Gamejam.Scripts.Controllers.Scripts.Environment
             }
             else if (backToDefault)
             {
-                transform.localRotation =
+                target.localRotation =
                     Quaternion.RotateTowards(transform.localRotation, startLocalRotation, rotationSpeed * Time.deltaTime);
             }
         }
@@ -47,7 +48,7 @@ namespace Gamejam.Scripts.Controllers.Scripts.Environment
 
                 var rotation = Quaternion.LookRotation(rotateTo.forward, rotateTo.up);
 
-                transform.rotation =
+                target.rotation =
                     Quaternion.RotateTowards(transform.rotation, rotation, rotationSpeed * Time.fixedDeltaTime);
             }
             else
@@ -55,7 +56,7 @@ namespace Gamejam.Scripts.Controllers.Scripts.Environment
                 var angle = Quaternion.Euler(Vector3.Cross(transform.forward, rotationAxis) * (rotationSpeed * Time.fixedDeltaTime));
 
                 Quaternion rotation = Quaternion.AngleAxis(rotationSpeed * Time.fixedDeltaTime, rotationAxis);
-                transform.localRotation *= rotation;
+                target.localRotation *= rotation;
             }
         }
 
@@ -69,7 +70,7 @@ namespace Gamejam.Scripts.Controllers.Scripts.Environment
         private void OnDrawGizmos()
         {
             Gizmos.color = Color.green;
-            Gizmos.DrawLine(transform.position, transform.position + rotationAxis.normalized);
+            Gizmos.DrawLine(target.position, target.position + rotationAxis.normalized);
         }
     }
 }
