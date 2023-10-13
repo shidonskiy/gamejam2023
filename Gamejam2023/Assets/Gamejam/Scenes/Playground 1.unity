@@ -3669,6 +3669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d19fa7c0474448b3a47ba85b2033fc00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 8345070699414287370}
   rotationAxis: {x: 0, y: 0, z: 1}
   rotationSpeed: 20
   rotateTo: {fileID: 1143803167}
