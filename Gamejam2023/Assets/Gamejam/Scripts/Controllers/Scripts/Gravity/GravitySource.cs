@@ -3,6 +3,11 @@ using UnityEngine;
 
 public class GravitySource : BaseInteractable
 {
+	[SerializeField] 
+	private int priority;
+
+	public int Priority => priority;
+	
 	public virtual Vector3 GetGravity (Vector3 position) {
 		return Physics.gravity;
 	}

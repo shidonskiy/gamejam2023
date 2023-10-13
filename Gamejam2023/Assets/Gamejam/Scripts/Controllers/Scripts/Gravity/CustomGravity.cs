@@ -7,6 +7,8 @@ public static class CustomGravity {
 	static List<GravitySource> sources = new List<GravitySource>();
 	private static List<ForceActor> forces = new List<ForceActor>();
 
+	public static Vector3 Forward = Vector3.forward;
+
 	public static void Register (GravitySource source) {
 		Debug.Assert(
 			!sources.Contains(source),
@@ -54,12 +56,24 @@ public static class CustomGravity {
 
 	public static Vector3 GetGravity (Vector3 position, out Vector3 upAxis) {
 		Vector3 g = Vector3.zero;
+		int priority = 0;
 		for (int i = 0; i < sources.Count; i++)
 		{
 			var sourceGravity = sources[i].GetGravity(position);
-			if (g.sqrMagnitude < sourceGravity.sqrMagnitude)
+			
+			if (sourceGravity.sqrMagnitude > 0 && sources[i].Priority > priority)
 			{
+				priority = sources[i].Priority;
+				Forward = sources[i].transform.forward;
 				g = sourceGravity;
+			}
+			else if (sources[i].Priority == priority)
+			{
+				if (g.sqrMagnitude < sourceGravity.sqrMagnitude)
+				{
+					Forward = sources[i].transform.forward;
+					g = sourceGravity;
+				}
 			}
 		}
 		upAxis = -g.normalized;
