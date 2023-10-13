@@ -26,11 +26,16 @@ namespace Gamejam.Scripts.Controllers.Scripts.Environment
             {
                 Rotate();
             }
-            else
+            else if (backToDefault)
             {
                 transform.localRotation =
                     Quaternion.RotateTowards(transform.localRotation, startLocalRotation, rotationSpeed * Time.deltaTime);
             }
+        }
+
+        public override void BackToDefault()
+        {
+            
         }
 
         private void Rotate()
