@@ -1,4 +1,5 @@
-﻿using StarterAssets;
+﻿using Gamejam.Scripts.Controllers.Scripts;
+using StarterAssets;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -80,7 +81,15 @@ public class PlayerController : MonoBehaviour {
 
 		if (input.restart)
 		{
-			SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
+			input.restart = false;
+			if (Game.Instance != null)
+			{
+				Game.Instance.GoToPause();
+			}
+			else
+			{
+				SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
+			}
 		}
 
 		if (playerInputSpace) {
