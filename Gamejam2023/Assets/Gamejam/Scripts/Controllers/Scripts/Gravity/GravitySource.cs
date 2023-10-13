@@ -17,10 +17,7 @@ public class GravitySource : BaseInteractable
 
 	public override void OnToggle(bool isActive)
 	{
-		if (isToggle)
-		{
-			Activate(isActive || !isToggle);
-		}
+		Activate(isActive);
 	}
 
 	protected virtual void Activate(bool isActive)
