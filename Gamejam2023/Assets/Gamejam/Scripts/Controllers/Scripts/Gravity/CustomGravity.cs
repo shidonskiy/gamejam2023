@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using Gamejam.Scripts.Controllers.Scripts.Environment;
 
 public static class CustomGravity {
 
 	static List<GravitySource> sources = new List<GravitySource>();
+	private static List<ForceActor> forces = new List<ForceActor>();
 
 	public static void Register (GravitySource source) {
 		Debug.Assert(
@@ -19,6 +21,27 @@ public static class CustomGravity {
 			"Unregistration of unknown gravity source!", source
 		);
 		sources.Remove(source);
+	}
+
+	public static void RegisterForce(ForceActor force)
+	{
+		forces.Add(force);
+	}
+	
+	public static void UnregisterForce(ForceActor force)
+	{
+		forces.Remove(force);
+	}
+
+	public static Vector3 GetForce(Vector3 position)
+	{
+		Vector3 force = Vector3.zero;
+		foreach (var forceActor in forces)
+		{
+			force += forceActor.GetForce(position);
+		}
+
+		return force;
 	}
 	
 	public static Vector3 GetGravity (Vector3 position) {

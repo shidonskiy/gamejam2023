@@ -90,6 +90,7 @@ public class PlayerController : MonoBehaviour {
 
 	void FixedUpdate () {
 		Vector3 gravity = CustomGravity.GetGravity(body.position, out upAxis);
+		Vector3 force = CustomGravity.GetForce(body.position);
 		
 		var rotation = Quaternion.LookRotation(playerObject.forward, upAxis);
 		playerObject.rotation = Quaternion.RotateTowards(playerObject.rotation, rotation, rotationSpeed * Time.deltaTime);
@@ -104,7 +105,7 @@ public class PlayerController : MonoBehaviour {
 			Jump(gravity);
 		}
 
-		velocity += gravity * Time.deltaTime;
+		velocity += gravity * Time.deltaTime + force * Time.deltaTime;
 
 		body.velocity = velocity;
 		ClearState();
