@@ -6,6 +6,7 @@ namespace Gamejam.Scripts.Controllers.Scripts.Environment
     public class ScaleActor : BaseInteractable
     {
 
+        [SerializeField] private Transform target;
         [SerializeField] private Vector3 targetScale = Vector3.one;
         [SerializeField] private float scaleTime = 1;
 
@@ -16,19 +17,19 @@ namespace Gamejam.Scripts.Controllers.Scripts.Environment
         private void Awake()
         {
             startScaleTime = Time.time;
-            startScale = transform.localScale;
+            startScale = target.localScale;
         }
 
         private void FixedUpdate()
         {
-            var currentScale = transform.localScale;
+            var currentScale = target.localScale;
             if (isScaleActive)
             {
-                transform.localScale = GetScale(currentScale, targetScale);
+                target.localScale = GetScale(currentScale, targetScale);
             }
             else if (backToDefault)
             {
-                transform.localScale = GetScale(currentScale, startScale);
+                target.localScale = GetScale(currentScale, startScale);
             }
         }
 

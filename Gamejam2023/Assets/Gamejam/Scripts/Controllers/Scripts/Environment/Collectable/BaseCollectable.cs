@@ -12,7 +12,8 @@ namespace Gamejam.Scripts.Controllers.Scripts.Environment.Collectable
         {
             if (other.gameObject.layer == Layers.Player)
             {
-                if(other.TryGetComponent<Collector>(out var collector))
+                var collector = other.GetComponentInParent<Collector>();
+                if(collector != null)
                 {
                     collector.Claim(itemType);
                     gameObject.SetActive(false);
