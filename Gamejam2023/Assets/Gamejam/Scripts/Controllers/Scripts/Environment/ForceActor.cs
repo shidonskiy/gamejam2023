@@ -32,5 +32,15 @@ namespace Gamejam.Scripts.Controllers.Scripts.Environment
 
             return Vector3.zero;
         }
+        
+        public override void OnToggle(bool isActive)
+        {
+            Activate(isActive);
+        }
+
+        protected virtual void Activate(bool isActive)
+        {
+            gameObject.SetActive(isActive);
+        }
     }
 }
