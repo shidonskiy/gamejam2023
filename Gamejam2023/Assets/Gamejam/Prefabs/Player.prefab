@@ -93,6 +93,10 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 1817301401927751265}
+    - target: {fileID: 8762286023885395323, guid: 9c489a8547f4d9e4387da15a4ff82c81, type: 3}
+      propertyPath: m_Lens.NearClipPlane
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8762286024517199034, guid: 9c489a8547f4d9e4387da15a4ff82c81, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9c489a8547f4d9e4387da15a4ff82c81, type: 3}
@@ -119,8 +123,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 360
-  minVerticalAngle: -45
-  maxVerticalAngle: 45
+  minVerticalAngle: -75
+  maxVerticalAngle: 60
   input: {fileID: 7737217033617158977}
   CinemachineCameraTarget: {fileID: 1817301401927751270}
 --- !u!1 &9017449711512526617 stripped
@@ -250,6 +254,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 3894530294379727534, guid: f3fd8206631c540b6b458cf00c98a14f, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4030276747414864585, guid: f3fd8206631c540b6b458cf00c98a14f, type: 3}
       propertyPath: cursorLocked
       value: 0
@@ -303,7 +311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5b7b53b63604d45b936f90c1f90deb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCount: 1
+  maxCount: 4
 --- !u!4 &6666895791623026055 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3347847093715983, guid: f3fd8206631c540b6b458cf00c98a14f, type: 3}
@@ -374,6 +382,10 @@ PrefabInstance:
     - target: {fileID: 9005220659476430821, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
       propertyPath: far clip plane
       value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 9005220659476430821, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
+      propertyPath: near clip plane
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430821, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
       propertyPath: orthographic size

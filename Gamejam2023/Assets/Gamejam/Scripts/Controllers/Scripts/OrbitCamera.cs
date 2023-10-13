@@ -39,6 +39,11 @@ public class OrbitCamera : MonoBehaviour {
 		CinemachineCameraTarget.transform.localRotation = orbitRotation;
 	}
 
+	public void Allign(Vector3 forward, Vector3 up)
+	{
+		
+	}
+
 	bool ManualRotation () {
 		Vector2 playerInput = new Vector2(input.look.y, input.look.x);
 		const float e = 0.001f;
