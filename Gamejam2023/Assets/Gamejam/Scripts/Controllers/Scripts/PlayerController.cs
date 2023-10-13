@@ -98,7 +98,7 @@ public class PlayerController : MonoBehaviour {
 		Vector3 gravity = CustomGravity.GetGravity(body.position, out upAxis);
 		Vector3 force = CustomGravity.GetForce(body.position);
 		
-		var rotation = Quaternion.LookRotation(playerObject.forward, upAxis);
+		var rotation = Quaternion.LookRotation(CustomGravity.Forward, upAxis);
 		playerObject.rotation = Quaternion.RotateTowards(playerObject.rotation, rotation, rotationSpeed * Time.deltaTime);
 
 		Debug.DrawLine(transform.position, transform.position + gravity, Color.red);

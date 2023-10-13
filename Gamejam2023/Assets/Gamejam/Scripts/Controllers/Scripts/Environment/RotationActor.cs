@@ -44,7 +44,7 @@ namespace Gamejam.Scripts.Controllers.Scripts.Environment
                 var rotation = Quaternion.LookRotation(rotateTo.forward, rotateTo.up);
 
                 target.rotation =
-                    Quaternion.RotateTowards(transform.rotation, rotation, rotationSpeed * Time.fixedDeltaTime);
+                    Quaternion.RotateTowards(target.rotation, rotation, rotationSpeed * Time.fixedDeltaTime);
             }
             else
             {
