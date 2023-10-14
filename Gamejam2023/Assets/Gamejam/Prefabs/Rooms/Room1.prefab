@@ -1279,7 +1279,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4817114302763381562, guid: 3780e59a826444d2bbc8a483dd0f2c88, type: 3}
       propertyPath: OnToggle.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4817114302763381562, guid: 3780e59a826444d2bbc8a483dd0f2c88, type: 3}
       propertyPath: OnToggle.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -1291,6 +1291,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4817114302763381562, guid: 3780e59a826444d2bbc8a483dd0f2c88, type: 3}
       propertyPath: OnToggle.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4817114302763381562, guid: 3780e59a826444d2bbc8a483dd0f2c88, type: 3}
+      propertyPath: OnToggle.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4817114302763381562, guid: 3780e59a826444d2bbc8a483dd0f2c88, type: 3}
@@ -1306,6 +1310,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4817114302763381562, guid: 3780e59a826444d2bbc8a483dd0f2c88, type: 3}
+      propertyPath: OnToggle.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4817114302763381562, guid: 3780e59a826444d2bbc8a483dd0f2c88, type: 3}
       propertyPath: OnToggle.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnToggle
       objectReference: {fileID: 0}
@@ -1315,6 +1323,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4817114302763381562, guid: 3780e59a826444d2bbc8a483dd0f2c88, type: 3}
       propertyPath: OnToggle.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: OnToggle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4817114302763381562, guid: 3780e59a826444d2bbc8a483dd0f2c88, type: 3}
+      propertyPath: OnToggle.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
       value: OnToggle
       objectReference: {fileID: 0}
     - target: {fileID: 4817114302763381562, guid: 3780e59a826444d2bbc8a483dd0f2c88, type: 3}
@@ -1330,11 +1342,19 @@ PrefabInstance:
       value: Gamejam.Scripts.Controllers.Scripts.Environment.RotationActor, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4817114302763381562, guid: 3780e59a826444d2bbc8a483dd0f2c88, type: 3}
+      propertyPath: OnToggle.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: Gamejam.Scripts.Controllers.Scripts.Environment.RotationActor, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4817114302763381562, guid: 3780e59a826444d2bbc8a483dd0f2c88, type: 3}
       propertyPath: OnToggle.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4817114302763381562, guid: 3780e59a826444d2bbc8a483dd0f2c88, type: 3}
       propertyPath: OnToggle.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4817114302763381562, guid: 3780e59a826444d2bbc8a483dd0f2c88, type: 3}
+      propertyPath: OnToggle.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4817114302763381565, guid: 3780e59a826444d2bbc8a483dd0f2c88, type: 3}
