@@ -15,6 +15,11 @@ namespace Gamejam.Scripts.Controllers.Scripts.UI
             replay.onClick.AddListener(Replay);
             back.onClick.AddListener(Back);
         }
+        
+        private void OnEnable()
+        {
+            Cursor.lockState = CursorLockMode.None;
+        }
 
         private void BackToMainscreen()
         {

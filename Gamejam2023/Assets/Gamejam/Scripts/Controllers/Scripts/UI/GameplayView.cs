@@ -14,6 +14,7 @@ namespace Gamejam.Scripts.Controllers.Scripts.UI
         private void OnEnable()
         {
             Time.timeScale = 1;
+            Cursor.lockState = CursorLockMode.Locked;
         }
         
         private void OnDisable()

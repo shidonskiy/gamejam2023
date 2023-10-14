@@ -260,7 +260,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4030276747414864585, guid: f3fd8206631c540b6b458cf00c98a14f, type: 3}
       propertyPath: cursorLocked
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5023254387062810606, guid: f3fd8206631c540b6b458cf00c98a14f, type: 3}
       propertyPath: m_Layer

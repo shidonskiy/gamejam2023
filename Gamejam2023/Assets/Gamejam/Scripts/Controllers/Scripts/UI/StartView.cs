@@ -15,6 +15,11 @@ namespace Gamejam.Scripts.Controllers.Scripts.UI
             level1.onClick.AddListener(() => StartLevel(1));
             level2.onClick.AddListener(() => StartLevel(2));
         }
+        
+        private void OnEnable()
+        {
+            Cursor.lockState = CursorLockMode.None;
+        }
 
         private void StartLevel(int index)
         {

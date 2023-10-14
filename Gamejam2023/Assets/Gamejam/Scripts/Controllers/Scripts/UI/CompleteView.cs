@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,6 +13,11 @@ namespace Gamejam.Scripts.Controllers.Scripts.UI
         {
             replay.onClick.AddListener(Replay);
             next.onClick.AddListener(Next);
+        }
+
+        private void OnEnable()
+        {
+            Cursor.lockState = CursorLockMode.None;
         }
 
         private void Replay()
