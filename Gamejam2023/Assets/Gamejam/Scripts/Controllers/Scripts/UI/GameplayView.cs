@@ -2,12 +2,14 @@ using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Gamejam.Scripts.Controllers.Scripts.UI
 {
     public class GameplayView : MonoBehaviour
     {
         [SerializeField] private TextMeshProUGUI collectionText;
+        [SerializeField] private Image orbImage;
 
         private int maxCount;
 
@@ -25,12 +27,12 @@ namespace Gamejam.Scripts.Controllers.Scripts.UI
         public void Setup(int max)
         {
             maxCount = max;
-            collectionText.text = $"COLLECTION: 0 : {maxCount}";
+            collectionText.text = $"0 / {maxCount}";
         }
 
         public void UpdateCount(int count)
         {
-            collectionText.text = $"COLLECTION: {count} : {maxCount}";
+            collectionText.text = $"{count} / {maxCount}";
             StartCoroutine(ClaimAnim());
         }
 
@@ -40,7 +42,7 @@ namespace Gamejam.Scripts.Controllers.Scripts.UI
             float time = 1;
             
             float currentScale = 1;
-            float scale = 1.5f;
+            float scale = 1.8f;
 
             var halfTime = time / 2;
 
@@ -62,10 +64,10 @@ namespace Gamejam.Scripts.Controllers.Scripts.UI
                     currentScale = endCurve.Evaluate((currentTime / halfTime));
                 }
 
-                collectionText.transform.localScale = Vector3.one * currentScale;
+                orbImage.transform.localScale = Vector3.one * currentScale;
             }
             
-            collectionText.transform.localScale = Vector3.one;
+            orbImage.transform.localScale = Vector3.one;
             
         }
     }
